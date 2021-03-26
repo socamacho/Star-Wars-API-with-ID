@@ -10,12 +10,15 @@ export const Planets = () => {
 	return (
 		<div className="container text-center mt-5">
 			<h1>Planets</h1>
-			<div className="card-deck">
+			<div className="scrolling-wrapper">
 				{store.planets.map((item, index) => {
 					return (
-						<div key={index} className="col-md-4 mb-3">
-							<CardP name={item.name} orbital={item.orbital_period} rotation={item.rotation_period} />
-						</div>
+						<CardP
+							key={index}
+							name={item.name}
+							orbital={item.orbital_period}
+							rotation={item.rotation_period}
+						/>
 					);
 				})}
 			</div>

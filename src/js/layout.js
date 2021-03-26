@@ -8,7 +8,8 @@ import { Home } from "./views/home";
 import { Demo } from "./views/demo";
 import { Single } from "./views/single";
 import injectContext from "./store/appContext";
-
+import { Characterdetails } from "./component/charactersdetails";
+import { Planetsdetails } from "./component/planetsdetails";
 import { Navbar } from "./component/navbar";
 import { Footer } from "./component/footer";
 
@@ -38,6 +39,12 @@ const Layout = () => {
 						</Route>
 						<Route exact path="/single/:theid">
 							<Single />
+						</Route>
+						<Route exact path="/charactersdetails/:index1">
+							<Characterdetails />
+						</Route>
+						<Route exact path="/planetsdetails/:index2">
+							<Planetsdetails />
 						</Route>
 						<Route>
 							<h1>Not found!</h1>

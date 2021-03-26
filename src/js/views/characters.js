@@ -10,16 +10,16 @@ export const Characters = () => {
 	return (
 		<div className="container text-center mt-5">
 			<h1>Characters</h1>
-			<div className="card-deck">
+			<div className="scrolling-wrapper">
 				{store.peoples.map((item, index) => {
 					return (
-						<div key={index} className="col-md-4 mb-3">
-							<Card
-								name={"Name:" + item.name}
-								hair={"Hair color:" + item.hair_color}
-								eyes={"Hair eyes:" + item.eyes_color}
-							/>
-						</div>
+						<Card
+							key={index}
+							name={"Name:" + item.name}
+							hair={"Hair color:" + item.hair_color}
+							eyes={"Hair eyes:" + item.eyes_color}
+							index={index}
+						/>
 					);
 				})}
 			</div>
