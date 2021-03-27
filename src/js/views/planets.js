@@ -16,15 +16,15 @@ export const Planets = () => {
 						<CardP
 							key={index}
 							name={item.name}
-							orbital={item.orbital_period}
-							rotation={item.rotation_period}
+							orbital={"Orbital period:" + item.orbital_period}
+							rotation={"Rotation period:" + item.rotation_period}
+							index2={index}
 						/>
 					);
 				})}
 			</div>
-
 			<Link to="/">
-				<button className="btn btn-primary">Go Home</button>
+				<button className="btn btn-warning">Go Home</button>
 			</Link>
 		</div>
 	);

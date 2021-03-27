@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export const Navbar = () => {
 	return (
-		<nav className="navbar navbar-light bg-dark mb-3">
+		<nav className="navbar navbar-light mb-3">
 			<img
 				width={100}
 				height={100}
@@ -17,13 +17,13 @@ export const Navbar = () => {
 			<div className="ml-auto">
 				<div className="dropdown">
 					<button
-						className="btn btn-secondary dropdown-toggle"
+						className="btn btn-warning dropdown-toggle"
 						type="button"
 						id="dropdownMenuButton"
 						data-toggle="dropdown"
 						aria-haspopup="true"
 						aria-expanded="false">
-						Favorites <span className="badge badge-light">0</span>
+						Favorites <span className="badge badge-warning">0</span>
 					</button>
 					<div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
 						<a className="dropdown-item" href="#">

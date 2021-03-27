@@ -15,16 +15,16 @@ export const Characters = () => {
 					return (
 						<Card
 							key={index}
-							name={"Name:" + item.name}
-							hair={"Hair color:" + item.hair_color}
-							eyes={"Hair eyes:" + item.eyes_color}
-							index={index}
+							name={item.name}
+							hair={"Hair color:   " + item.hair_color}
+							eyes={"Eyes color:    " + item.eyes_color}
+							index1={index}
 						/>
 					);
 				})}
 			</div>
 			<Link to="/">
-				<button className="btn btn-primary">Go Home</button>
+				<button className="btn btn-warning">Go Home</button>
 			</Link>
 		</div>
 	);

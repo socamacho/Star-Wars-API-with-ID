@@ -9,7 +9,7 @@ import { Demo } from "./views/demo";
 import { Single } from "./views/single";
 import injectContext from "./store/appContext";
 import { Characterdetails } from "./component/charactersdetails";
-import { Planetsdetails } from "./component/planetsdetails";
+import { Planetdetails } from "./component/planetsdetails";
 import { Navbar } from "./component/navbar";
 import { Footer } from "./component/footer";
 
@@ -44,10 +44,10 @@ const Layout = () => {
 							<Characterdetails />
 						</Route>
 						<Route exact path="/planetsdetails/:index2">
-							<Planetsdetails />
+							<Planetdetails />
 						</Route>
 						<Route>
-							<h1>Not found!</h1>
+							<h1>NOT FOUND!</h1>
 						</Route>
 					</Switch>
 					<Footer />
