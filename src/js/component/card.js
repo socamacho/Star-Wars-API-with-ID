@@ -1,9 +1,16 @@
-import React from "react";
+import React, { useContext } from "react";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import { Characterdetails } from "../component/charactersdetails";
+import { Context } from "../store/appContext";
 
 export const Card = props => {
+	const { store, actions } = useContext(Context); //De esta manera cargo la action del flux, al sintonizar por medio de store y actions.
+
+	const OnClickEvent = e => {
+		actions.setStoreValorFavs();
+	};
+
 	return (
 		<div className="card text-center bg-dark" style={{ width: "8rem;" }}>
 			<img
@@ -21,7 +28,7 @@ export const Card = props => {
 					<button className="btn btn-warning ">Learn more</button>
 				</Link>
 				<button type="button" className="btn btn-warning float-right">
-					<i className="far fa-heart"></i>
+					<i className="far fa-heart" onClick={e => OnClickEvent(e)}></i>
 				</button>
 			</div>
 		</div>
