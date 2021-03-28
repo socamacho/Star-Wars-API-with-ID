@@ -8,7 +8,13 @@ export const Card = props => {
 	const { store, actions } = useContext(Context); //De esta manera cargo la action del flux, al sintonizar por medio de store y actions.
 
 	const OnClickEvent = e => {
-		actions.setStoreValorFavs();
+		const CharacterName = props.name;
+		if (store.favoritos.find(NombrePersonaje => NombrePersonaje === CharacterName)) {
+			//Si TRUE : No agregar
+		} else {
+			actions.addFavorites(props.name);
+			//Si FALSE: Agregar
+		}
 	};
 
 	return (

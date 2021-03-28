@@ -1,6 +1,7 @@
 const getState = ({ getStore, getActions, setStore }) => {
 	return {
 		store: {
+			peoples: [],
 			/*peoples: [
 				{
 					name: "Luke Skywalker",
@@ -143,9 +144,9 @@ const getState = ({ getStore, getActions, setStore }) => {
 				setStore({ demo: demo });
 			},
 			//NOTA: getStore me permite obtener el valor (inmeditamente anterior) del store de manera segura.
-			setStoreValorFavs: () => {
+			/*setStoreValorFavs: () => {
 				setStore({ valor: getStore().valor + 1 });
-			},
+			},*/
 
 			addFavorites: fav => {
 				setStore({ favoritos: getStore().favoritos.concat(fav) });
