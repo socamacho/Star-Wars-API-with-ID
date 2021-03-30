@@ -2,6 +2,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 	return {
 		store: {
 			peoples: [],
+			planets: [],
 			/*peoples: [
 				{
 					name: "Luke Skywalker",

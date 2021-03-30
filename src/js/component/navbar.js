@@ -19,7 +19,7 @@ export const Navbar = () => {
 
 						<button
 							type="button"
-							className="btn btn-dark"
+							className="btn btn-dark float-right"
 							onClick={e => {
 								DeleteFavorite(index);
 							}}>
