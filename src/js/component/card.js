@@ -18,7 +18,7 @@ export const Card = props => {
 	};
 
 	return (
-		<div className="card text-center bg-dark" style={{ width: "8rem;" }}>
+		<div className="card text-center bg-dark text-warning">
 			<img
 				className="card-img-top"
 				src="https://cdn6.dibujos.net/images/listas/los-mejores-personajes-de-star-wars.jpg"
